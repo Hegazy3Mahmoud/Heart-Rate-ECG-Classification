@@ -1,5 +1,10 @@
 # Heart-rate-ECG-Heart-Rate-Classification-(98%,accuracy-recall)
 
+
+## to approch data : https://www.kaggle.com/datasets/shayanfazeli/heartbeat 
+it's too big to upload it
+
+
 ## What is an ecg?
 
 An electrocardiogram (ECG) is a simple test that can be used to check your heart's rhythm and electrical activity.
