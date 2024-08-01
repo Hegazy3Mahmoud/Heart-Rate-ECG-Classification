@@ -35,13 +35,18 @@ The objective is to build a model that can predict whether an ECG heart rate is 
 
 ### Data Imbalance Issue
 The original dataset exhibited an imbalance between classes:
-![image](https://github.com/user-attachments/assets/56f4140e-5a85-45f0-95cf-1cff78c0b47d)
 
 Class 0 (Normal beat): 90,589 samples
+
 Class 1 (Supraventricular premature beat): 18,857 samples
+
+![image](https://github.com/user-attachments/assets/56f4140e-5a85-45f0-95cf-1cff78c0b47d)
+
+
 To address this issue, data augmentation was employed:
 
 Downsampling: Reduced the number of samples in Class 0 from 90,589 to 60,000.
+
 Upsampling: Increased the number of samples in Class 1 from 18,857 to 30,000 by adding noise.
 
 ![image](https://github.com/user-attachments/assets/3dced969-7137-4fb9-b9ea-713b5c2e05a2)
@@ -60,15 +65,21 @@ A simple fully connected neural network with three layers was used for this task
 
 #### Model Architecture
 Input Layer: Dense layer with 128 units, ReLU activation
+
 Hidden Layer 1: Dense layer with 64 units, ReLU activation
+
 Hidden Layer 2: Dense layer with 16 units, ReLU activation
+
 Output Layer: Dense layer with 1 unit, sigmoid activation
+
 
 #### Compilation
 The model is compiled with the following configuration:
 
 Loss Function: Binary cross-entropy
+
 Optimizer: Adam
+
 Metrics: Accuracy, Precision, Recall
 
 ##### Random Forest
