@@ -23,9 +23,13 @@ This project aims to classify ECG heart rate data as normal or abnormal using a 
 The combined dataset has five classes:
 
 N: Normal beat (Class 0)
+
 S: Supraventricular premature beat (Class 1)
+
 V: Premature ventricular contraction (Class 2)
+
 F: Fusion of ventricular and normal beat (Class 3)
+
 Q: Unclassified beat (Class 4)
 
 
